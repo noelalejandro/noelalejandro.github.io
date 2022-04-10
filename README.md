@@ -3,7 +3,9 @@
 ## Programming Portfolio
 
 
-## Banana Manor
+### Banana Manor
+
+![BananaManor](https://user-images.githubusercontent.com/100980921/162595648-9d0c3ec1-ea07-495f-b76f-e7b2b401d7dc.jpg)
 
 [BananaManor](https://github.com/noelalejandro/BananaManor) is a game that demonstrates object-oriented programming principles inheritance, encapsulation, and polymorphism.
 
