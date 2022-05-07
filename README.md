@@ -28,6 +28,5 @@
 10. Save in Presentation Mode
 
 
-### Watch Rhodonea.amxd
-![Rhodonea.amxd](https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/RhodoneaM4L.mp4)
-
+### Watch Rhodonea.amxd Demo
+[![Watch Rhodonea.amxd Demo](https://img.youtube.com/vi/5eo9lXczmhk/default.jpg)](https://youtu.be/5eo9lXczmhk)
