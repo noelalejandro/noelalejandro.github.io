@@ -19,7 +19,7 @@
 1. Follow the link to the [Rhodonea.amxd](https://github.com/noelalejandro/Max/blob/main/Rhodonea.amxd) repository
 2. Copy raw contents
 3. Open Ableton Live Suite (compatible with version 10 or later)
-4. Navigate to Max for Live in Live's browser
+4. Navigate to "Max for Live" in Live's browser
 5. Expand the Max Audio Effect tab
 6. Double-click the Max Audio Effect device
 7. Press the Edit Button on the Device Title Bar
