@@ -1,4 +1,4 @@
-# Noel Alejandro Gutierrez
+# Noel Alejandro Gutierrez Marenco
 ## MEDI 481 - The Sonic Experience
 ### Rhodonea.amxd
 ![Rhodonea.amxd M4L Device](https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/RhodoneaM4L.png)
