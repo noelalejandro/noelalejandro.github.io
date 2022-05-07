@@ -11,4 +11,4 @@
 - smoothing
 - frequency
 
-In its current form, Rhodonea.amxd automatically takes an audio signal input to modulate RGB values. In later Iterations, I hope to implement an auto/manual function for more user interactivity and control of the overall color. This device is a derivative of code by [Umut Eldem](https://github.com/umutreldem/hearing-glass/tree/main/tutorials), licensed under GNU General Public LIcense v3 (GPL 3.0).
+In its current form, Rhodonea.amxd automatically takes an audio signal input to modulate RGB values. In later Iterations, I hope to implement an auto/manual function for more control of the overall color. This device is a derivative of code by [Umut Eldem](https://github.com/umutreldem/hearing-glass/tree/main/tutorials), licensed under GNU General Public LIcense v3 (GPL 3.0).
