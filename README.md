@@ -29,5 +29,5 @@
 
 
 ### Watch Rhodonea.amxd
-[Rhodonea.amxd](https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/RhodoneaM4L.mp4)
+![Rhodonea.amxd](https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/RhodoneaM4L.mp4)
 
