@@ -11,10 +11,10 @@
 - Smoothing
 - Frequency
 
-#### In its current form, Rhodonea.amxd automatically takes an audio signal input to modulate RGB values. In later Iterations, I hope to implement an auto/manual function for more control of the overall color. This device is a derivative of code by [Umut Eldem](https://github.com/umutreldem/hearing-glass/tree/main/tutorials), licensed under GNU General Public LIcense v3 (GPL 3.0).
+#### In its current form, Rhodonea.amxd automatically takes an audio signal input to modulate RGB values. In later Iterations, I hope to implement an auto/manual toggle for complete control over color output. This device is a derivative of code by [Umut Eldem](https://github.com/umutreldem/hearing-glass/tree/main/tutorials), licensed under GNU General Public LIcense v3 (GPL 3.0).
 
 
-### Install Rhodonoea.amxd
+### Install Rhodonea.amxd
 
 1. Follow the link to the [Rhodonea.amxd](https://github.com/noelalejandro/Max/blob/main/Rhodonea.amxd) repository
 2. Copy raw contents
@@ -26,3 +26,8 @@
 8. Press cmd+a and delete the contents
 9. Press cmd+v to paste raw code
 10. Save in Presentation Mode
+
+
+### Watch Rhodonea.amxd
+https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/RhodoneaM4L.mp4
+
