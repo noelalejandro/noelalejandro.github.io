@@ -1,7 +1,7 @@
 # Noel Alejandro Gutierrez Marenco
 ## MEDI 481 - The Sonic Experience
 ### Rhodonea.amxd
-![Rhodonea.amxd M4L Device](https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/RhodoneaM4L.png)
+![Rhodonea.amxd M4L Device](https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/Rhodonea.amxd.png)
 
 #### [Rhodonea.amxd](https://github.com/noelalejandro/Max/blob/main/Rhodonea.amxd) is an audio-reactive visualizer in the form of a Max for Live device, deisgned and programmed for use in Ableton Live Suite. Drawing upon the legacy of Italian mathematician Guido Grandi (1671-1742), Rhodonea.amxd generates "rose" polar coordinate graphs, of which the user has control over:
 - RGBA Values
