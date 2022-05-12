@@ -27,6 +27,14 @@
 9. Press cmd+v to paste raw code
 10. Save in Presentation Mode
 
+## Process
+#### Learn - Max8 documentation, Jitter tutorials, YouTube tutorials
+Refine Concept - initially creating abstract audio-reactive visuals, narrowed down to M4L device
+Iteration - fine tuning, deeper exploration of possible parameter control
+Packaging - clean up, “Max for Live Best Practices” tutorial, presentation
+Beta Testing - sent device to four colleagues for feedback
+
+
 ## Reference
 #### [1] [Max 8 Documentation](https://docs.cycling74.com/max8)
 #### [2] [Oscilloscope Music - Max for Live](https://oscilloscopemusic.com/maxforlive.php)
