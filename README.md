@@ -29,8 +29,8 @@
 
 ### Reference
 #### [1] [Max 8 Documentation](https://docs.cycling74.com/max8)
-[2] [Oscilloscope Music - Max for Live](https://oscilloscopemusic.com/maxforlive.php)
-[3] [Cycling ‘74 YoutTube - “Max for Live Best Practices” Tutorial](https://youtu.be/7mk4JMBVDZ4)
-[4] [Hearing Glass (Umut Eldem) YouTube - “Polar Rose with jit.gen” Tutorial](https://youtu.be/PDrfcPgnhSA)
+#### [2] [Oscilloscope Music - Max for Live](https://oscilloscopemusic.com/maxforlive.php)
+#### [3] [Cycling ‘74 YoutTube - “Max for Live Best Practices” Tutorial](https://youtu.be/7mk4JMBVDZ4)
+#### [4] [Hearing Glass (Umut Eldem) YouTube - “Polar Rose with jit.gen” Tutorial](https://youtu.be/PDrfcPgnhSA)
 
 
