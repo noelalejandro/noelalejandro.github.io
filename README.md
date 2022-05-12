@@ -29,9 +29,9 @@
 
 ## Design Process
 #### Learn
-Having never used Max before, I spent hours reading over bits of the Max 8 documentation. Cycling '74 has done an amazing job with their documentation by providing extensive tutorials,  YouTube tutorials
+Having never programmed anything in Max, I spent hours reading over bits of the Max 8 documentation. Cycling '74 has done an amazing job with their documentation by providing extensive tutorials and guides on Max, MSP, and Jitter. The Max community forum also offers great support and feedback on projects. YouTube tutorials were also instrumental in figuring out what was going on inside the world of Max. Since this project is of an audio-visual nature, much of my time was spent learning how Jitter operates. 
 #### Refine
-initially creating abstract audio-reactive visuals, narrowed down to M4L device
+What intriguiged me most, at first, were abstract visuals. As the project progressed I began to 
 #### Iterate
 fine tuning, deeper exploration of possible parameter control
 #### Package
