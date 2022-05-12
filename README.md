@@ -2,7 +2,7 @@
 ## MEDI 481 - The Sonic Experience
 ## Rhodonea.amxd
 [![Rhodonea.amxd](https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/Rhodonea.amxd.png)](https://youtu.be/5eo9lXczmhk)
-###### Click Image To Watch Demo
+Click Image To Watch Demo
 
 #### [Rhodonea.amxd](https://github.com/noelalejandro/Max/blob/main/Rhodonea.amxd) is an audio-reactive visualizer in the form of a Max for Live device, deisgned and programmed for use in Ableton Live Suite. Drawing upon the legacy of Italian mathematician Guido Grandi (1671-1742), Rhodonea.amxd generates "rose" polar coordinate graphs, of which the user has control over:
 - RGBA Values
@@ -27,16 +27,16 @@
 9. Press cmd+v to paste raw code
 10. Save in Presentation Mode
 
-## Design
+## Design Process
 #### Learn
-Max8 documentation, Jitter tutorials, YouTube tutorials
-#### Refine Concept
+I spent hours Max8 documentation, Jitter tutorials, YouTube tutorials
+#### Refine
 initially creating abstract audio-reactive visuals, narrowed down to M4L device
-#### Iteration
+#### Iterate
 fine tuning, deeper exploration of possible parameter control
-#### Packaging
+#### Package
 clean up, “Max for Live Best Practices” tutorial, presentation
-#### Beta Testing
+#### Beta Test
 sent device to four colleagues for feedback
 
 
