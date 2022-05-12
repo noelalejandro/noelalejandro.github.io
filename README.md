@@ -27,7 +27,7 @@
 9. Press cmd+v to paste raw code
 10. Save in Presentation Mode
 
-## Process
+## Design
 #### Learn
 Max8 documentation, Jitter tutorials, YouTube tutorials
 #### Refine Concept
