@@ -41,11 +41,11 @@ The final step in development was the Beta Test. I sent Rhodonea.amxd to colleag
 
 
 ## Reference
-#### [1] [Max 8 Documentation](https://docs.cycling74.com/max8)
-#### [2] [Cycling '74 Forums](https://cycling74.com/forums/page/1)
-#### [3] [Cycling ‘74 YouTube - “Max for Live Best Practices” Tutorial](https://youtu.be/7mk4JMBVDZ4)
-#### [4] [Oscilloscope Music - Max for Live Patches](https://oscilloscopemusic.com/maxforlive.php)
-#### [5] [Hearing Glass (Umut Eldem) YouTube - “Polar Rose with jit.gen” Tutorial](https://youtu.be/PDrfcPgnhSA)
-#### [6] [Amazing Max Stuff YouTube](https://www.youtube.com/c/AmazingMaxStuff)
+###### [1] [Max 8 Documentation](https://docs.cycling74.com/max8)
+###### [2] [Cycling '74 Forums](https://cycling74.com/forums/page/1)
+###### [3] [Cycling ‘74 YouTube - “Max for Live Best Practices” Tutorial](https://youtu.be/7mk4JMBVDZ4)
+###### [4] [Oscilloscope Music - Max for Live Patches](https://oscilloscopemusic.com/maxforlive.php)
+###### [5] [Hearing Glass (Umut Eldem) YouTube - “Polar Rose with jit.gen” Tutorial](https://youtu.be/PDrfcPgnhSA)
+###### [6] [Amazing Max Stuff YouTube](https://www.youtube.com/c/AmazingMaxStuff)
 
 
