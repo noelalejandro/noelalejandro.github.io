@@ -29,7 +29,7 @@
 
 ## Design Process
 #### Learn
-I spent hours Max8 documentation, Jitter tutorials, YouTube tutorials
+Having never used Max before, I spent hours reading over bits of the Max 8 documentation. Cycling '74 has done an amazing job with their documentation by providing extensive tutorials,  YouTube tutorials
 #### Refine
 initially creating abstract audio-reactive visuals, narrowed down to M4L device
 #### Iterate
