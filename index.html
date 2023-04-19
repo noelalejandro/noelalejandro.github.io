@@ -19,6 +19,19 @@ p {
 </style>
 </head>
 <body>
+  
+<script>
+function playSine() {
+context = new AudioContext();
+osc = context.createOscillator();
+osc.connect(context.destination);
+
+osc.start();
+osc.stop(context.currentTime + 1);
+}
+</script>
+
+<button type="button" onclick="playSine()">Play</button>
 
 <h1>Noel Alejandro Gutierrez Marenco</h1>
 <p>MEDI 481 - The Sonic Experience</p>
