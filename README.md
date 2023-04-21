@@ -1,6 +1,6 @@
 # Noel Alejandro Gutierrez Marenco
-## MEDI 481 - The Sonic Experience
-## Rhodonea.amxd
+## MEDI 482 - Music Technology Capstone
+## NGEcho.amxd/.vst/.au
 [![Rhodonea.amxd](https://github.com/noelalejandro/noelalejandro.github.io/blob/main/assets/Rhodonea.amxd/Rhodonea.amxd.png)](https://youtu.be/5eo9lXczmhk)
 ###### Click Image To Watch Demo
 
