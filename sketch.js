@@ -42,13 +42,21 @@ console.log(balls);
 let osc, playing, freq, amp;
 
 function setup() {
+  for (let i = 0; i < 50; i++) {
+    balls.push(new Ball());
+  }
   let cnv = createCanvas(100, 100);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
 }
 
 function draw() {
-  background(220)
+  background(51);
+  for (let i = 0; i < balls.length; i++) {
+    let b = balls[i];
+    b.update();
+    b.display();
+  }
   freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
   amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
 
