@@ -23,14 +23,14 @@ class Ball {
   }
   
   checkBoundaryCollision() {
-    if (this.x > width - this.diameter/2) {
-      this.x = width - this.diameter/2;
+    if (this.x > displayWidth - this.diameter/2) {
+      this.x = displayWidth - this.diameter/2;
       this.dx *= -this.dx * bounciness;
     } else if (this.x < this.diameter/2) {
       this.x = this.diameter/2;
       this.dx *= -this.dx * bounciness;
-    } else if (this.y > height - this.diameter/2) {
-      this.y = height - this.diameter/2;
+    } else if (this.y > displayHeight - this.diameter/2) {
+      this.y = displayHeight - this.diameter/2;
       this.dy *= -this.dy * bounciness;
     } else if (this.y < this.diameter) {
       this.y = this.diameter;
@@ -42,7 +42,7 @@ class Ball {
 let balls = [10];
 
 function setup() {
-  createCanvas(710, 400);
+  createCanvas(disaplayWidth, displayHeight);
   // Create objects
   for (let i = 0; i < 50; i++) {
     balls.push(new Ball());
