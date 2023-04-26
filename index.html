@@ -26,16 +26,7 @@
   </head>
   <body>
   
-<script>
-function playSine() {
-context = new AudioContext();
-osc = context.createOscillator();
-osc.connect(context.destination);
-
-osc.start();
-osc.stop(context.currentTime + 1);
-}
-</script>
+<script>src="audi314.js"</script>
 
 <button type="button" onclick="playSine()">Play</button>
 
