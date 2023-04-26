@@ -122,18 +122,9 @@ class Ball {
     ellipse(this.position.x, this.position.y, this.r * 2, this.r * 2);
   }
 }
+
 let balls = [new Ball(100, 400, 80), new Ball(700, 400, 80)];
 console.log(balls);
-
-function draw() {
-  background(51);
-  for (let i = 0; i < balls.length; i++) {
-    let b = balls[i];
-    b.update();
-    b.display();
-    b.checkBoundaryCollision();
-    balls[0].checkCollision(balls[1]);
-  }
 }
 
 //======================================================================
@@ -155,6 +146,8 @@ function draw() {
     let b = balls[i];
     b.update();
     b.display();
+    b.checkBoundaryCollision();
+    balls[0].checkCollision(balls[1]);
   }
   freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
   amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
