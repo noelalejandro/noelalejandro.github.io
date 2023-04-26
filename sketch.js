@@ -34,6 +34,9 @@ class Ball {
   }
 }
 
+let balls = [new Ball(700, 400, 80), new Ball(700, 400, 80)];
+console.log(balls);
+
 //======================================================================
 
 let osc, playing, freq, amp;
