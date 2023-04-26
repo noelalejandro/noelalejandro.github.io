@@ -1,30 +1,37 @@
-let t = 0; // time variable
+let osc, playing, freq, amp;
 
 function setup() {
-  createCanvas(600, 600);
-  noStroke();
-  fill(40, 200, 40);
+  let cnv = createCanvas(100, 100);
+  cnv.mousePressed(playOscillator);
+  osc = new p5.Oscillator('sine');
 }
 
 function draw() {
-  background(10, 10); // translucent background (creates trails)
+  background(220)
+  freq = constrain(map(mouseX, 0, width, 100, 500), 100, 500);
+  amp = constrain(map(mouseY, height, 0, 0, 1), 0, 1);
 
-  // make a x and y grid of ellipses
-  for (let x = 0; x <= width; x = x + 30) {
-    for (let y = 0; y <= height; y = y + 30) {
-      // starting point of each circle depends on mouse position
-      const xAngle = map(mouseX, 0, width, -4 * PI, 4 * PI, true);
-      const yAngle = map(mouseY, 0, height, -4 * PI, 4 * PI, true);
-      // and also varies based on the particle's location
-      const angle = xAngle * (x / width) + yAngle * (y / height);
+  text('tap to play', 20, 20);
+  text('freq: ' + freq, 20, 40);
+  text('amp: ' + amp, 20, 60);
 
-      // each particle moves in a circle
-      const myX = x + 20 * cos(2 * PI * t + angle);
-      const myY = y + 20 * sin(2 * PI * t + angle);
-
-      ellipse(myX, myY, 10); // draw particle
-    }
+  if (playing) {
+    // smooth the transitions by 0.1 seconds
+    osc.freq(freq, 0.1);
+    osc.amp(amp, 0.1);
   }
+}
 
-  t = t + 0.01; // update time
+function playOscillator() {
+  // starting an oscillator on a user gesture will enable audio
+  // in browsers that have a strict autoplay policy.
+  // See also: userStartAudio();
+  osc.start();
+  playing = true;
+}
+
+function mouseReleased() {
+  // ramp amplitude to 0 over 0.5 seconds
+  osc.amp(0, 0.5);
+  playing = false;
 }
