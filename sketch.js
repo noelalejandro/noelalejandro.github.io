@@ -34,18 +34,6 @@ class Ball {
   }
 }
 
-Ball bouncingBall()
-{
-  Ball ball = new Ball();
-  ball.x = width/2;
-  ball.y = 25;
-  ball.dx = random(-20,20);
-  ball.dy = 20;
-  ball.diameter = 50;
-  ball.fillColor = color(255, 255, 255);
-  return ball;
-}
-
 let balls = [];
 console.log(balls);
 
