@@ -40,7 +40,7 @@ class Ball {
   }
 }
 
-let balls = [];
+let balls = [10];
 
 function setup() {
   createCanvas(710, 400);
