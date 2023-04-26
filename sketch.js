@@ -6,8 +6,7 @@ class Ball {
     this.dx = random(-20,20);
     this.dy = 20;
     this.bounciness = 0.75;
-    this.diameter = random(10, 30);
-    this.speed = 1;
+    this.diameter = 50;
   }
 
   move() {
