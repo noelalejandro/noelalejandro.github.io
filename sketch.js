@@ -131,10 +131,10 @@ console.log(balls);
 
 let osc, playing, freq, amp;
 
-function setup() {
-  for (let i = 0; i < 50; i++) {
-    balls.push(new Ball());
-  }
+// function setup() {
+//   for (let i = 0; i < 50; i++) {
+//     balls.push(new Ball());
+//   }
   let cnv = createCanvas(710, 400);
   cnv.mousePressed(playOscillator);
   osc = new p5.Oscillator('sine');
