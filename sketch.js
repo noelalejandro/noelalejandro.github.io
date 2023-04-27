@@ -2,25 +2,27 @@ let balls = [];
 let gravity = 0.9;
 let wind = 0.0;
 
-let env;
-let osc;
-
-// envelope parameters
 let t1 = 0.01; // attack time in seconds
 let l1 = 0.7; // attack level 0.0 to 1.0
 let t2 = 0.1; // decay time in seconds
 let l2 = 0.0; // decay level  0.0 to 1.0
 
+let env;
+let osc;
+
 function setup() {
-  createCanvas(1425, 750);
-  // 
+  createCanvas(1475, 775);
+  
+  // currently set to 1 ball, this can be changed to any number
   for (let i = 0; i < 1; i++) {
     balls.push(new Ball());
   }
+  // set up oscillator
   env = new p5.Envelope(t1, l1, t2, l2);
   osc = new p5.Oscillator('sine')
   osc.amp(0.5);
 
+  // set up delay
   delay = new p5.Delay();
   delay.process(osc, 0.5, 0.7, 1000); // (input, delay time, feedback, filter cutoff)
   delay.setType('pingPong')
@@ -32,7 +34,7 @@ function playSound() {
 }
 
 function draw() {
-  background(50, 50, 50);
+  background(35, 35, 35);
   for (let i = 0; i < balls.length; i++) {
     balls[i].move();
     balls[i].display();
@@ -52,7 +54,7 @@ function draw() {
   }
 }
 
-// Ball class
+// ball class
 class Ball {
   constructor() {
     this.x = random(width); //position
@@ -68,8 +70,6 @@ class Ball {
     this.y += this.dy;
     this.dx += wind;
     this.dy += gravity;
-    this.dx = this.dx * hold;
-    this.dy = this.dy * hold;
 
     // boundary collision
     if (this.y - this.r < 0) 
@@ -77,6 +77,7 @@ class Ball {
             this.y = this.r;
             this.dy = this.dy * -1 * this.bounciness;
 
+            // trigger synth
             osc.start();
             env.play(osc);
         }
@@ -85,6 +86,7 @@ class Ball {
             this.y = height - this.r;
             this.dy = this.dy * -1 * this.bounciness;
 
+            // trigger synth
             osc.start();
             env.play(osc);
         }
@@ -93,6 +95,7 @@ class Ball {
             this.x = this.r;
             this.dx = this.dx * -1 * this.bounciness;
 
+            // trigger synth
             osc.start();
             env.play(osc);
         } 
@@ -101,6 +104,7 @@ class Ball {
             this.x = width - this.r;
             this.dx = this.dx * -1 * this.bounciness;
 
+            // trigger synth
             osc.start();
             env.play(osc);
         }
