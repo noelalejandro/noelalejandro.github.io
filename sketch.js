@@ -75,7 +75,7 @@ class Ball {
     this.y = random(height); //position
     this.dx = random(-5,5); //velocity
     this.dy = 5; //velocity
-    this.r = 25; //radius
+    this.r = 50; //radius
     this.bounciness = 0.5;
   }
 
