@@ -18,7 +18,7 @@ function setup() {
     balls.push(new Ball());
   }
   env = new p5.Envelope(t1, l1, t2, l2);
-  osc = new p5.Oscillator('sawtooth')
+  osc = new p5.Oscillator('sine')
   osc.amp(0.5);
 
   delay = new p5.Delay();
