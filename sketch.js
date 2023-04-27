@@ -1,4 +1,3 @@
-// forces
 let balls = [];
 let gravity = 0.9;
 let wind = 0.0;
