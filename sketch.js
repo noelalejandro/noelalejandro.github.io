@@ -1,14 +1,16 @@
+// forces
 let balls = [];
 let gravity = 0.9;
 let wind = 0.0;
 
+let env;
+let osc;
+
+// envelope parameters
 let t1 = 0.01; // attack time in seconds
 let l1 = 0.7; // attack level 0.0 to 1.0
 let t2 = 0.1; // decay time in seconds
 let l2 = 0.0; // decay level  0.0 to 1.0
-
-let env;
-let osc;
 
 function setup() {
   createCanvas(1425, 750);
