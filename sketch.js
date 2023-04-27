@@ -1,7 +1,6 @@
 let balls = [];
 let gravity = 0.9;
 let wind = 0.0;
-let hold = 1;
 
 let t1 = 0.01; // attack time in seconds
 let l1 = 0.7; // attack level 0.0 to 1.0
@@ -50,22 +49,6 @@ function draw() {
   if (keyIsDown(RIGHT_ARROW)){
     wind = wind + 0.05;
   }
-
-  function mousePressed() {
-    if (hold == 1) {
-      hold = 0;
-    } else {
-      hold = 1;
-    }
-  }
-  
-  function mouseReleased() {
-    if (hold == 1) {
-      hold = 0;
-    } else {
-      hold = 1;
-    }
-  }
 }
 
 // Ball class
@@ -87,7 +70,7 @@ class Ball {
     this.dx = this.dx * hold;
     this.dy = this.dy * hold;
 
-    // Boundary Collision
+    // boundary collision
     if (this.y - this.r < 0) 
         {
             this.y = this.r;
