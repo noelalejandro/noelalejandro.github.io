@@ -23,6 +23,7 @@ function setup() {
 
   // set up oscillator
   env = new p5.Envelope(t1, l1, t2, l2);
+  lpf = new p5.Filter();
   osc = new p5.Oscillator('square')
   osc.amp(0.5);
 
@@ -49,7 +50,7 @@ function draw() {
   strokeWeight(5);
   stroke(255);
 
-  let freq = map(mouseX, 0, width, 40, 880);
+  let freq = map(balls[0].x, 0, width, 55, 110);
   osc.freq(freq);
 
   for (let i = 0; i < balls.length; i++) {
@@ -97,6 +98,7 @@ class Ball {
       this.history.splice(0, 1);
     }
 
+    // "tunnel" effect
     for (let i = 0; i < this.history.length; i++) {
           this.r *= cos(7.02) / 3;
 
@@ -113,8 +115,7 @@ class Ball {
             this.dy = this.dy * -1 * this.bounciness;
 
             // trigger synth
-            osc.start();
-            env.play(osc);
+            playSound();
         }
 
     // lower boundary
@@ -124,8 +125,7 @@ class Ball {
             this.dy = this.dy * -1 * this.bounciness;
 
             // trigger synth
-            osc.start();
-            env.play(osc);
+            playSound();
         }
 
     // left boundary
@@ -135,8 +135,7 @@ class Ball {
             this.dx = this.dx * -1 * this.bounciness;
 
             // trigger synth
-            osc.start();
-            env.play(osc);
+            playSound();
         } 
     
     // right boundary
@@ -146,8 +145,7 @@ class Ball {
             this.dx = this.dx * -1 * this.bounciness;
 
             // trigger synth
-            osc.start();
-            env.play(osc);
+            playSound();
         }
     }
 
