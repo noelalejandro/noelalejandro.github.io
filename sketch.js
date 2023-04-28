@@ -5,6 +5,7 @@ let wind = 0.0;
 // synth parameters
 let env;
 let osc;
+let lpf;
 
 // envelope parameters 
 let t1 = 0.01; // attack time in seconds
