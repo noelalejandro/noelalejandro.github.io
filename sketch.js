@@ -5,7 +5,6 @@ let wind = 0.0;
 // synth parameters
 let env;
 let osc;
-let lpf;
 
 // envelope parameters 
 let t1 = 0.01; // attack time in seconds
@@ -51,12 +50,11 @@ function draw() {
   strokeWeight(5);
   stroke(255);
 
-  let freq = map(balls[0].x, 0, width, 55, 110);
-  osc.freq(freq);
-
   for (let i = 0; i < balls.length; i++) {
     balls[i].move();
     balls[i].display();
+    let freq = map(balls[i].x, 0, width, 55, 110);
+    osc.freq(freq);
   }
 
   if (keyIsDown(UP_ARROW)) {
