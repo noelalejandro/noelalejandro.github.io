@@ -60,10 +60,12 @@ function draw() {
     balls[i].move();
     balls[i].display();
 
+    // x postion determines oscillator frequency
     let freq = map(balls[i].x, 0, width, 55, 220);
     osc.freq(freq);
   }
 
+  // user interactivity
   if (keyIsDown(UP_ARROW)) {
     gravity = gravity - 0.05;
   }
