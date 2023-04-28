@@ -52,7 +52,8 @@ function draw() {
   for (let i = 0; i < balls.length; i++) {
     balls[i].move();
     balls[i].display();
-    let freq = map(balls[i].x, 0, width, 55, 110);
+
+    let freq = map(balls[i].x, 0, width, 55, 220);
     osc.freq(freq);
   }
 
