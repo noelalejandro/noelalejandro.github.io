@@ -3,8 +3,9 @@ let gravity = 0.9;
 let wind = 0.0;
 
 // synth parameters
-let env;
 let osc;
+let env;
+let delay;
 
 // envelope parameters 
 let t1 = 0.01; // attack time in seconds
