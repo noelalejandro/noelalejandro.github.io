@@ -2,30 +2,39 @@ let balls = [];
 let gravity = 0.9;
 let wind = 0.0;
 
+// synth parameters
+let env;
+let osc;
+
+// envelope parameters 
 let t1 = 0.01; // attack time in seconds
 let l1 = 0.7; // attack level 0.0 to 1.0
 let t2 = 0.1; // decay time in seconds
 let l2 = 0.0; // decay level  0.0 to 1.0
 
-let env;
-let osc;
-
 function setup() {
-  createCanvas(1475, 775);
+  createCanvas(windowWidth, windowHeight);
+  background(0);
   
   // currently set to 1 ball, this can be changed to any number
   for (let i = 0; i < 1; i++) {
     balls.push(new Ball());
   }
+
   // set up oscillator
   env = new p5.Envelope(t1, l1, t2, l2);
-  osc = new p5.Oscillator('sine')
+  osc = new p5.Oscillator('square')
   osc.amp(0.5);
 
   // set up delay
   delay = new p5.Delay();
-  delay.process(osc, 0.5, 0.7, 1000); // (input, delay time, feedback, filter cutoff)
+  delay.process(osc, 0.99, 0.7, 750); // (input, delay time, feedback, filter cutoff)
   delay.setType('pingPong')
+}
+
+function windowResize() {
+  resizeCanvas(windowWidth, windowHeight);
+  background(0);
 }
 
 function playSound() {
@@ -34,7 +43,15 @@ function playSound() {
 }
 
 function draw() {
-  background(35, 35, 35);
+  background(0, 0, 0, 30);
+
+  noFill();
+  strokeWeight(5);
+  stroke(255);
+
+  let freq = map(mouseX, 0, width, 40, 880);
+  osc.freq(freq);
+
   for (let i = 0; i < balls.length; i++) {
     balls[i].move();
     balls[i].display();
@@ -56,13 +73,14 @@ function draw() {
 
 // ball class
 class Ball {
-  constructor() {
-    this.x = random(width); //position
-    this.y = random(height); //position
-    this.dx = random(-5,5); //velocity
-    this.dy = 5; //velocity
-    this.r = 50; //radius
+  constructor(x,y) {
+    this.x = random(width); // position
+    this.y = random(height); // position
+    this.dx = random(-5,5); // velocity
+    this.dy = 5; // velocity
+    this.r = 300; // radius
     this.bounciness = 0.5;
+    this.history = [] // array for trailing circles
   }
 
   move() {
@@ -71,7 +89,24 @@ class Ball {
     this.dx += wind;
     this.dy += gravity;
 
+    // set up trailing circles
+    let v = createVector(this.x, this.y);
+    this.history.push(v);
+
+    if (this.history.length > 2) {
+      this.history.splice(0, 1);
+    }
+
+    for (let i = 0; i < this.history.length; i++) {
+          this.r *= cos(7.02) / 3;
+
+          if (this.r <= 1) {
+            this.r *= 300;
+          }
+    }
+
     // boundary collision
+    // upper boundary
     if (this.y - this.r < 0) 
         {
             this.y = this.r;
@@ -81,15 +116,19 @@ class Ball {
             osc.start();
             env.play(osc);
         }
-    if (this.y - this.r > height) 
+
+    // lower boundary
+    if (this.y - this.r > windowHeight) 
         {
-            this.y = height - this.r;
+            this.y = windowHeight - this.r;
             this.dy = this.dy * -1 * this.bounciness;
 
             // trigger synth
             osc.start();
             env.play(osc);
         }
+
+    // left boundary
     if (this.x - this.r < 0) 
         {
             this.x = this.r;
@@ -99,9 +138,11 @@ class Ball {
             osc.start();
             env.play(osc);
         } 
-    if (this.x - this.r > width) 
+    
+    // right boundary
+    if (this.x - this.r > windowWidth) 
         {
-            this.x = width - this.r;
+            this.x = windowWidth - this.r;
             this.dx = this.dx * -1 * this.bounciness;
 
             // trigger synth
@@ -112,5 +153,10 @@ class Ball {
 
   display() {
     ellipse(this.x, this.y, this.r * 2, this.r * 2);
+
+    for (let i = 0; i < this.history.length; i++) {
+      let pos = this.history[i];
+      ellipse(pos.x, pos.y, this.r * 2, this.r * 2);
+    }
   }
 }
