@@ -5,7 +5,6 @@ let wind = 0.0;
 // synth parameters
 let env;
 let osc;
-let lpf;
 
 // envelope parameters 
 let t1 = 0.01; // attack time in seconds
@@ -24,7 +23,6 @@ function setup() {
 
   // set up oscillator
   env = new p5.Envelope(t1, l1, t2, l2);
-  lpf = new p5.Filter();
   osc = new p5.Oscillator('square')
   osc.amp(0.5);
 
