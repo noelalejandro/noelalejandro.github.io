@@ -3,8 +3,8 @@ let gravity = 0.9;
 let wind = 0.0;
 
 // synth parameters
-let osc;
 let env;
+let osc;
 let delay;
 
 // envelope parameters 
@@ -45,6 +45,12 @@ function playSound() {
 
 function draw() {
   background(0, 0, 0, 30);
+
+  // user instructions
+  textSize(56);
+  strokeWeight(1);
+  stroke(100,100,100,50);
+  text("use arrow keys to move around", 30, 60);
 
   noFill();
   strokeWeight(5);
