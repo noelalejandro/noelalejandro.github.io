@@ -44,7 +44,7 @@ function playSound() {
 }
 
 function draw() {
-  background(0);
+  background(0,0,0,30);
 
   // user instructions
   textSize(56);
