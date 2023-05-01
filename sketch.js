@@ -44,7 +44,7 @@ function playSound() {
 }
 
 function draw() {
-  background(0, 0, 0, 30);
+  background(0);
 
   // user instructions
   textSize(56);
@@ -106,7 +106,7 @@ class Ball {
       this.history.splice(0, 1);
     }
 
-    // "tunnel" effect
+    // "tunnel" visual effect
     for (let i = 0; i < this.history.length; i++) {
           this.r *= cos(7.02) / 3;
 
