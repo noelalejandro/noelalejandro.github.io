@@ -19,9 +19,9 @@ function setup() {
   background(0);
   
   // currently set to 1 ball, this can be changed to any number
-  // for (let i = 0; i < numBalls; i++) {
-  //   numBalls + 1;
-  // }
+  for (let i = 0; i < numBalls; i++) {
+    numBalls + 1;
+  }
 
   // set up oscillator
   env = new p5.Envelope(t1, l1, t2, l2);
