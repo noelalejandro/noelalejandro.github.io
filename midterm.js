@@ -1,5 +1,4 @@
 let balls = [];
-let numBalls = 1;
 let gravity = 0.9;
 let wind = 0.0;
 
@@ -19,7 +18,7 @@ function setup() {
   background(0);
   
   // currently set to 1 ball, this can be changed to any number
-  for (let i = 0; i < numBalls; i++) {
+  for (let i = 0; i < 1; i++) {
     numBalls + 1;
   }
 
