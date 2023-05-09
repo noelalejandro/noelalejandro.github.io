@@ -19,7 +19,7 @@ function setup() {
   
   // currently set to 1 ball, this can be changed to any number
   for (let i = 0; i < 1; i++) {
-    numBalls + 1;
+    balls.push(new Ball());
   }
 
   // set up oscillator
@@ -43,11 +43,6 @@ function playSound() {
   env.play(osc);
 }
 
-function newBall() {
-  numBalls + 1;
-  balls.push(new Ball());
-}
-
 function draw() {
   background(0, 0, 0, 30);
 
@@ -61,7 +56,7 @@ function draw() {
   strokeWeight(5);
   stroke(255);
 
-  for (let i = 0; i < balls[i].length; i++) {
+  for (let i = 0; i < balls.length; i++) {
     balls[i].move();
     balls[i].display();
 
@@ -80,9 +75,6 @@ function draw() {
   }
   if (keyIsDown(RIGHT_ARROW)){
     wind = wind + 0.05;
-  }
-  if (keyIsDown(RETURN)){
-    newBall();
   }
 }
 
