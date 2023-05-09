@@ -61,7 +61,7 @@ function draw() {
   strokeWeight(5);
   stroke(255);
 
-  for (let i = 0; i < 1; i++) {
+  for (let i = 0; i < balls[i].length; i++) {
     balls[i].move();
     balls[i].display();
 
