@@ -1,0 +1,68 @@
+* {
+     box-sizing: border-box !important;
+}
+
+html {
+     scroll-behavior: smooth;
+}
+
+body {
+     background-color: #000;
+     color: #eeeeee;
+     font-size: 14px;
+     font-family: 'Lato', sans-serif;
+     line-height: 1.80857;
+     font-weight: normal;
+}
+
+a {
+     color: rgb(0, 150, 255);
+     text-decoration: rgb(0, 150, 255) wavy underline !important;
+     outline: none !important;
+     -webkit-transition: all .3s ease-in-out;
+     -moz-transition: all .3s ease-in-out;
+     -ms-transition: all .3s ease-in-out;
+     -o-transition: all .3s ease-in-out;
+     transition: all .3s ease-in-out;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+     letter-spacing: 0;
+     font-weight: normal;
+     position: relative;
+     padding: 0 0 10px 0;
+     font-weight: normal;
+     line-height: normal;
+     color: #ffffff;
+     margin: 0
+}
+
+h1 {
+     font-size: 48px;
+}
+
+h2 {
+     font-size: 29.125px;
+}
+
+h3 {
+     font-size: 20px;
+     text-decoration: rgb(0, 150, 255) wavy underline !important;
+}
+
+h4 {
+     font-size: 16px
+}
+
+h5 {
+     font-size: 14px
+}
+
+h6 {
+     font-size: 13px
+}
