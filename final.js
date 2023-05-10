@@ -23,7 +23,7 @@ function setup() {
   createCanvas(windowWidth, windowHeight);
   background(0);
   
-  // currently set to 1 ball, this can be changed to any number
+  // currently set to 1 shape each, this can be changed to any number
   for (let i = 0; i < 1; i++) {
     circles.push(new Circle());
     squares.push(new Square());
